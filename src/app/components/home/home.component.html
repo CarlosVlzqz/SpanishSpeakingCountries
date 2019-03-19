@@ -1,0 +1,18 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Pais</th>
+            <th scope="col">Poblacion</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Bandera</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of paises">
+            <td>{{ pais.name }}</td>
+            <td>{{ pais.population }}</td>
+            <td>{{ pais.alpha2Code }}</td>
+            <td> <img width="100px" [src]="pais.flag"> </td>
+        </tr>
+    </tbody>
+</table>
